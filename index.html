@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+
+<head>
+  <meta charset="utf-8">
+  <title>Password Generator</title>
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially. 
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--main section start-->
+    <main>
+      <section class="password-section">
+        <div class="wrapper">
+          <div class="password-container">
+            <h1 class="heading">Password Generator</h1>
+            <form class="password-form">
+              <div class="result-container">
+                <input type="text" class="result" disabled>
+                <a href="#FIXME" class="copy" title="Copy">Copy</a>
+              </div>
+              <ul class="password-settings">
+                <li class="setting">
+                  <label for="length">Password Length</label>
+                  <input type="number" class="length" id="length" min="4" max="20" value="20" >
+                </li>
+                <li class="setting">
+                  <label for="uppercase">Include uppercase letters</label>
+                  <input type="checkbox" class="uppercase" id="uppercase">
+                </li>
+                <li class="setting">
+                  <label for="lowercase">Include lowercase letters</label>
+                  <input type="checkbox" class="lowercase" id="lowercase">
+                </li>
+                <li class="setting">
+                  <label for="numbers">Include numbers</label>
+                  <input type="checkbox" class="numbers" id="numbers">
+                </li>
+                <li class="setting">
+                  <label for="symbols">Include symbols</label>
+                  <input type="checkbox" class="symbols" id="symbols">
+                </li>
+              </ul>
+              <input type="button" class="generate-btn" value="Generate Password">
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--main section end-->
+
+  </div>
+  <!--container end-->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
